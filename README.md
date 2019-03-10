@@ -1,7 +1,9 @@
 # ![Cardinal](https://github.com/Aredhele/Cardinal/blob/master/Docs/Banner.png)
 
 <p align="center">
-  <img src="https://img.shields.io/discord/554267137183842324.svg?style=flat-square&logo=discord&link=https://discordapp.com/invite/my3jjwF"/>
+  <a href="https://discordapp.com/invite/my3jjwF">
+    <img src="https://img.shields.io/discord/554267137183842324.svg?style=flat-square&logo=discord">
+  </a>
   <img src="https://img.shields.io/github/stars/Aredhele/Cardinal.svg?label=stars&style=flat-square"/>
   <img src="https://img.shields.io/github/contributors/Aredhele/Cardinal.svg?style=flat-square"/>
   <img src="https://img.shields.io/github/followers/Aredhele.svg?style=flat-square"/>
