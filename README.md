@@ -20,7 +20,7 @@ The engine is fully written in C++17 and should be available on Windows, Linux a
 ## Useful links
 
 * [Cardinal's Wiki](wip)
-* [Cardinal's Discord](wip)
+* [Cardinal's Discord](https://discordapp.com/invite/my3jjwF)
 * [Cardinal's Documentation](wip)
 
 ## Expected engine features
