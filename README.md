@@ -12,10 +12,16 @@
   <img src="https://img.shields.io/codacy/grade/ad9840040e224ca1892747c6b6e74a48.svg?style=flat-square"/>
 </p>
 
-# Cardinal Engine
+# Cardinal
 
-Cardinal is a modern and modular game engine (WIP) designed to solve some [AAA game production issues](wip). 
+Cardinal is a modern and modular game engine designed to solve some [AAA game production issues](wip). 
 The engine is fully written in C++17 and should be available on Windows, Linux and MacOS.
+
+## The concept
+
+<p align="justify">
+The concept behind Cardinal is simple : <b>Providing a core engine from which you can develop your own engine adapted to your needs</b>. When working on a video game, it often happens that it becomes impossible to use a generic tool or a common game engine. For instance, you have some vehicles moving at high speed in a wide open-world and you need a super fast assets streaming system. Most game engines will fail. With Cardinal, <b>you develop you own systems and plug it to the core</b>, building a custom engine adapted to your game. You're free to any third party library if you won't develop all by yourself. Finally, the core will include a common code base to most of video game, namely <b>containers, objects and entities, scripting systems etc</b>.
+</p>
 
 ## Useful links
 
@@ -30,7 +36,7 @@ If you're interested in the development, check out the [roadmap](wip).
 
 * Full modular and data-oriented design
 * Native Entity-Component System (ECS)
-* Cutting edge job system
+* Cutting edge job system and containers
 * Native C++ scripting 
 * Serialization and fast loading at light speed
 * Small compile time
@@ -39,6 +45,6 @@ If you're interested in the development, check out the [roadmap](wip).
 
 Coming soon.
 
-## Contributor
+## Contributors
 
-Coming soon.
+* [@Aredhele](https://github.com/Aredhele) - Engine programmer
