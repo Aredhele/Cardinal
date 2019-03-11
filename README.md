@@ -26,7 +26,7 @@ The concept behind Cardinal is simple : <b>Providing a core engine from which yo
 </p>
 
 <p align="justify">
-  You might also be interested in Cardinal <b>if you wish to learn about engine programming</b>. For example you have interest for rendering or physics and you don't want recreate a whole engine ? Just download Cardinal and start writing you engine in a stable and functional environment.
+  You might also be interested in Cardinal <b>if you wish to learn about engine programming</b>. For example you have interest for rendering or physics and you don't want recreate a whole engine ? Just download Cardinal and start writing your engine in a stable and functional environment.
 </p>
 
 ## Useful links
