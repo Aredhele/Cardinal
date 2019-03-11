@@ -14,13 +14,21 @@
 
 # Cardinal
 
-Cardinal is a modern and modular game engine designed to solve some [AAA game production issues](wip). 
+<p align="justify">
+Cardinal is a modern and modular game engine designed to solve some <a href="wip">AAA game production issues</a>. 
 The engine is fully written in C++17 and should be available on Windows, Linux and MacOS.
+</p>
+
+<a href="wip">AAA game production issues</a>
 
 ## The concept
 
 <p align="justify">
 The concept behind Cardinal is simple : <b>Providing a core engine from which you can develop your own engine adapted to your needs</b>. When working on a video game, it often happens that it becomes impossible to use a generic tool or a common game engine. For instance, you have some vehicles moving at high speed in a wide open-world and you need a super fast assets streaming system. Most game engines will fail. With Cardinal, <b>you develop you own systems and plug it to the core</b>, building a custom engine adapted to your game. You're free to any third party library if you won't develop all by yourself. Finally, the core will include a common code base to most of video game, namely <b>containers, objects and entities, scripting systems etc</b>.
+</p>
+
+<p align="justify">
+  You might also be interested in Cardinal <b>if you wish to learn about engine programming</b>. For example you have interest for rendering or physics and you don't want recreate a whole engine ? Just download Cardinal and start writing you engine in a stable and functional environment.
 </p>
 
 ## Useful links
@@ -31,8 +39,10 @@ The concept behind Cardinal is simple : <b>Providing a core engine from which yo
 
 ## Expected engine features
 
+<p align="justify">
 Because the engine is still work in progress, here is a non-exhaustive list of what you could expect from Cardinal.
-If you're interested in the development, check out the [roadmap](wip). 
+If you're interested in the development, check out the <a href="wip">roadmap</a>. 
+</p>
 
 * Full modular and data-oriented design
 * Native Entity-Component System (ECS)
