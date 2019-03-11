@@ -19,8 +19,6 @@ Cardinal is a modern and modular game engine designed to solve some <a href="wip
 The engine is fully written in C++17 and should be available on Windows, Linux and MacOS.
 </p>
 
-<a href="wip">AAA game production issues</a>
-
 ## The concept
 
 <p align="justify">
