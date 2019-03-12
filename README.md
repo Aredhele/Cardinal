@@ -1,7 +1,7 @@
 # ![Cardinal](https://github.com/Aredhele/Cardinal/blob/master/Docs/Banner.png)
 
 <p align="center">
-  <a href="https://discordapp.com/invite/my3jjwF">
+  <a href="https://discordapp.com/invite/none">
     <img src="https://img.shields.io/discord/554267137183842324.svg?style=flat-square&logo=discord">
   </a>
   <img src="https://img.shields.io/github/stars/Aredhele/Cardinal.svg?label=stars&style=flat-square"/>
@@ -32,7 +32,7 @@ The concept behind Cardinal is simple : <b>Providing a core engine from which yo
 ## Useful links
 
 * [Cardinal's Wiki](wip)
-* [Cardinal's Discord](https://discordapp.com/invite/my3jjwF)
+* [Cardinal's Discord](https://discordapp.com/invite/none) (Link disabled)
 * [Cardinal's Documentation](wip)
 
 ## Expected engine features
@@ -55,4 +55,7 @@ Coming soon.
 
 ## Contributors
 
-* [@Aredhele](https://github.com/Aredhele) - Engine programmer
+<ul>
+  <li> <a href="https://github.com/Aredhele">@Aredhele</a> - Engine programmer</li>
+  <li> <a href="https://github.com/Suliac">@Suliac</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Network programmer</li>
+</ul> 
