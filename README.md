@@ -22,7 +22,7 @@ The engine is fully written in C++17 and should be available on Windows, Linux a
 ## The concept
 
 <p align="justify">
-The concept behind Cardinal is simple : <b>Providing a core engine from which you can develop your own engine adapted to your needs</b>. When working on a video game, it often happens that it becomes impossible to use a generic tool or a common game engine. For instance, you have some vehicles moving at high speed in a wide open-world and you need a super fast assets streaming system. Most game engines will fail. With Cardinal, <b>you develop you own systems and plug it to the core</b>, building a custom engine adapted to your game. You're free to any third party library if you won't develop all by yourself. Finally, the core will include a common code base to most of video game, namely <b>containers, objects and entities, scripting systems etc</b>.
+The concept behind Cardinal is simple : <b>Providing a core engine from which you can develop your own engine adapted to your needs</b>. When working on a video game, it often happens that it becomes impossible to use a generic tool or a common game engine. For instance, you have some vehicles moving at high speed in a wide open-world and you need a super fast assets streaming system. Most game engines will fail. With Cardinal, <b>you develop you own systems and plug it to the core</b>, building a custom engine adapted to your game. You're free to use any third party library if you won't develop all by yourself. The core will include a common code base to most of video games, namely <b>containers, objects and entities, scripting systems etc</b>.
 </p>
 
 <p align="justify">
