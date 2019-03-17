@@ -31,7 +31,7 @@ The concept behind Cardinal is simple : <b>Providing a core engine from which yo
 
 ## Useful links
 
-* [Cardinal's Wiki](wip)
+* [Cardinal's Wiki](https://github.com/Aredhele/Cardinal/wiki)
 * [Cardinal's Discord](https://discordapp.com/invite/none) (Link disabled)
 * [Cardinal's Documentation](wip)
 
