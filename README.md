@@ -51,7 +51,7 @@ If you're interested in the development, check out the <a href="wip">roadmap</a>
 
 ## Contributing
 
-Coming soon.
+It's possible to participate in the development of Cardinal. For more information about contributions, please refer to the [following page](https://github.com/Aredhele/Cardinal/blob/master/Docs/Contributing/Contributing.md) on this GitHub.
 
 ## Contributors
 
