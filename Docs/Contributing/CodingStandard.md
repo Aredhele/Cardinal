@@ -94,29 +94,29 @@ Following file naming rules, types have similar conventions.
 #### Examples <div id="NamingExamples"></div>
 
 ```cpp
-    // Class prefixed by C
-    class CPlayer
-    {
-    public:
+// Class prefixed by C
+class CPlayer
+{
+public:
 
-        // Pointer prefixed by p
-        explicit CPlayer(int hit_points);
-        
-        // Mutators are prefixed by "Set"
-        void SetHitPoints(int hit_points) noexcept;
-        
-        // Accessors are prefixed by "Get"
-        int GetHitPoints() const noexcept;
-        
-        // Is the player dead ?
-        bool IsDead() const noexcept;
+   // Pointer prefixed by p
+   explicit CPlayer(int hit_points);
 
-    private:
+   // Mutators are prefixed by "Set"
+   void SetHitPoints(int hit_points) noexcept;
 
-        // Member variable prefixed by m
-        // Member variable in snake case
-        int m_hit_points;
-    };
+   // Accessors are prefixed by "Get"
+   int GetHitPoints() const noexcept;
+
+   // Is the player dead ?
+   bool IsDead() const noexcept;
+
+private:
+
+   // Member variable prefixed by m
+   // Member variable in snake case
+   int m_hit_points;
+};
 ```
     
 #### Documentation and comments <div id="Comments"></div>
@@ -129,30 +129,30 @@ Following file naming rules, types have similar conventions.
 #### Examples <div id="CommentsExamples"></div>
 
 ```cpp
-    /// \class CEntityManager
-    /// \brief Stores and manages all entities
-    class CEntityManager
-    {
-    public:
-    
-        /// \brief  Returns the current amount of entities
-        /// \return The current amount of entities
-        unsigned GetEntityCount() const noexcept;
-        
-    private:
-        unsigned m_entity_count; ///< The amount of entities
-    };
+/// \class CEntityManager
+/// \brief Stores and manages all entities
+class CEntityManager
+{
+public:
+
+   /// \brief  Returns the current amount of entities
+   /// \return The current amount of entities
+   unsigned GetEntityCount() const noexcept;
+
+private:
+   unsigned m_entity_count; ///< The amount of entities
+};
 ```
 
 * If a keyword like *static, virtual or explicit* is used, a comment should be add before the
 implementation :   
 
 ```cpp
-    // Declaration .hpp
-    virtual void Foo(void);
-    
-    // Implementation .cpp
-    /* virtual */ void Bar::Foo(void) {}
+// Declaration .hpp
+virtual void Foo(void);
+
+// Implementation .cpp
+/* virtual */ void Bar::Foo(void) {}
 ```
     
 #### Const correctness <div id="ConstCorrectness"></div>
