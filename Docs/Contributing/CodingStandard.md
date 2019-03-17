@@ -36,8 +36,10 @@ is taken from the internet, it could be interesting to mention the source in the
 #### Copyright Notice <div id="Copyright"></div>
 Each file must include the following copyright notice :
 
-    Coming soon.
-        
+```
+   Coming soon.
+```
+
 #### Naming conventions <div id="Naming"></div>
 
 <p align="justify">
@@ -91,7 +93,7 @@ Following file naming rules, types have similar conventions.
 
 #### Examples <div id="NamingExamples"></div>
 
-    ```cpp
+```cpp
     // Class prefixed by C
     class CPlayer
     {
@@ -115,7 +117,7 @@ Following file naming rules, types have similar conventions.
         // Member variable in snake case
         int m_hit_points;
     };
-    ```
+```
     
 #### Documentation and comments <div id="Comments"></div>
 
@@ -126,7 +128,7 @@ Following file naming rules, types have similar conventions.
 
 #### Examples <div id="CommentsExamples"></div>
 
-    ```cpp
+```cpp
     /// \class CEntityManager
     /// \brief Stores and manages all entities
     class CEntityManager
@@ -140,18 +142,18 @@ Following file naming rules, types have similar conventions.
     private:
         unsigned m_entity_count; ///< The amount of entities
     };
-    ```
-    
+```
+
 * If a keyword like *static, virtual or explicit* is used, a comment should be add before the
 implementation :   
 
-    ```cpp
+```cpp
     // Declaration .hpp
     virtual void Foo(void);
     
     // Implementation .cpp
     /* virtual */ void Bar::Foo(void) {}
-    ```
+```
     
 #### Const correctness <div id="ConstCorrectness"></div>
 
@@ -264,8 +266,10 @@ Never use *using namespace* in a header, it's impossible to undo.
 
 #### Containers <div id="Containers"></div>
 
+```
    Coming soon.
-   
+```
+
 #### Memory <div id="Memory"></div>
 The memory is one of the main resources of the engine. And it's also easy to make a bad use of it.
 Here're some advices :
@@ -278,4 +282,6 @@ Here're some advices :
 
 #### Optimization <div id="Optimization"></div>
 
+```
    Coming soon.
+```
