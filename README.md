@@ -1,4 +1,4 @@
-# ![Cardinal](https://github.com/Aredhele/Cardinal/blob/master/Docs/Banner.png)
+# ![Cardinal](https://raw.githubusercontent.com/Aredhele/Cardinal/master/Docs/Visual/Banner.png)
 
 <p align="center">
   <a href="https://discordapp.com/invite/none">
