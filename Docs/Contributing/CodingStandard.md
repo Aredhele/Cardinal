@@ -86,6 +86,15 @@ Following file naming rules, types have similar conventions.
  * Private class members are prefixed by **m_** : m_member
  * Pointers are always prefixed by **p** : p_player
     * If the pointer is a private class member, it's possible to mix both : mp_member
+    * About pointer types :
+```cpp
+      // Use this : 
+      Data* p_data = nullptr;
+
+      // Not these :
+      Data * p_data = nullptr;
+      Data *p_data  = nullptr;
+```    
  * Mutator methods are prefixed by **Set**
  * Accessor method are prefixed by **Get**
  * Functions or method returning boolean should ask a question : IsInvincible(), IsEnabled() etc.
