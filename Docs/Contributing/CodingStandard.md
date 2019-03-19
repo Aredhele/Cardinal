@@ -209,6 +209,9 @@ to the one you choose :
 **Note about override and final :** 
 When marking a method as *override or final*, it suggests that it is a virtual method defined somewhere in a base class. So it becomes useless to specify *virtual* in the declaration. It is redundant.
 
+**The forbidden one :** 
+The use of *const_cast* is prohibited.
+
 #### Code formatting <div id="CodeFormatting"></div>
 
 ```cpp 
