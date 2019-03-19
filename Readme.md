@@ -5,10 +5,9 @@
     <img src="https://img.shields.io/discord/554267137183842324.svg?style=flat-square&logo=discord">
   </a>
   <img src="https://img.shields.io/github/contributors/Aredhele/Cardinal.svg?logo=github&style=flat-square"/>
-  <img src="https://img.shields.io/github/followers/Aredhele.svg?logo=github&style=flat-square"/>
   <img src="https://img.shields.io/github/downloads/Aredhele/Cardinal/total.svg?logo=github&style=flat-square"/>
   <img src="https://img.shields.io/github/license/Aredhele/Cardinal.svg?logo=github&style=flat-square"/>
-  <img src="https://img.shields.io/github/languages/code-size/Aredhele/Cardinal.svg?style=flat-square"/>
+  <img src="https://img.shields.io/github/languages/code-size/Aredhele/Cardinal.svg?logo=github&style=flat-square"/>
   <img src="https://img.shields.io/codacy/grade/ad9840040e224ca1892747c6b6e74a48.svg?style=flat-square&logo=codacy"/>
 </p>
 
