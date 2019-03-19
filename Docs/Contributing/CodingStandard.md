@@ -16,16 +16,22 @@ rules exist to allow efficient reading and fast refactoring. This document, not 
         - <a href="#TypeNaming">Type naming</a>
         - <a href="#NamingExamples">Examples</a>
    - <a href="#Comments">Documentation and comments</a>
-       - <a href="#CommentsExamples">Examples</a>
+       - <a href="#DocumentingFile">Documenting a file</a>
+       - <a href="#DocumentingFunction">Documenting a method</a>
+       - <a href="#DocumentingMembers">Documenting variables and members</a>
+       - <a href="#CommentsExamples">A full example</a>
    - <a href="#ConstCorrectness">Const correctness</a> 
    - <a href="#cpp11cpp14">C++11 and C++14</a> 
    - <a href="#CodeFormatting">Code formatting</a> 
    - <a href="#Namespaces">Namespaces</a>
-   - <a href="#Containers">Containers</a>
+   - <a href="#TypesContainers">Types and containers</a>
+      - <a href="#Types">Types</a>
+      - <a href="#Containers">Containers</a>
    - <a href="#Memory">Memory</a> 
    - <a href="#Optimization">Optimization</a>
+      - <a href="#CompilationTime">Compilation time</a>
   
-#### Introduction <div id="Introduction"></div>
+## Introduction <div id="Introduction"></div>
 
 <p align="justify">
 For maintainability purposes, the focus should be <b>readability and comprehension</b>. It implies that an internal 
@@ -33,25 +39,25 @@ documentation will be maintained and <b>each non-trivial</b> code should be at l
 is taken from the internet, it could be interesting to mention the source in the documentation block. 
 </p>
 
-#### Copyright Notice <div id="Copyright"></div>
+## Copyright Notice <div id="Copyright"></div>
 Each file must include the following copyright notice :
 
 ```
    Coming soon.
 ```
 
-#### Naming conventions <div id="Naming"></div>
+## Naming conventions <div id="Naming"></div>
 
 <p align="justify">
 Why naming conventions ? Having such conventions or standards help developers to stay coherent from one source file to another. We all have different personal conventions which in addition evolves over time. Without any standard, it leads to a messy result. Moreover this helps all non-contributor developers to quickly read and understand the code.
 </p>
 
-#### File extension <div id="FileExt"></div>
+### File extension <div id="FileExt"></div>
 
 * C code file extensions are **.h, .c**
 * C++ code file extensions are **.hpp, .cpp**
 
-#### File name <div id="FileNaming"></div>
+### File name <div id="FileNaming"></div>
 
 In order to be able to locate and identify specific files, there are some rules about the file naming :  
 
@@ -67,7 +73,7 @@ Examples :
 * **TArray.hpp** is a file implementing an array using C++ templates
 * **IComponent.hpp** is a file defining an interface for components
 
-#### Type naming <div id="TypeNaming"></div>
+### Type naming <div id="TypeNaming"></div>
 
 Following file naming rules, types have similar conventions.
 
@@ -100,7 +106,7 @@ Following file naming rules, types have similar conventions.
  * Functions or method returning boolean should ask a question : IsInvincible(), IsEnabled() etc.
  * Explicit names are better than cryptic names except if it's really obvious
 
-#### Examples <div id="NamingExamples"></div>
+### Examples <div id="NamingExamples"></div>
 
 ```cpp
 // Class prefixed by C
@@ -128,23 +134,76 @@ private:
 };
 ```
     
-#### Documentation and comments <div id="Comments"></div>
+## Documentation and comments <div id="Comments"></div>
 
 * Comments must be clear and useful
 * A code comment use //
 * The documentation use ///
 * The documentation generator is Doxygen
+* The public documentation is located in the header file (.hpp). The documentation generator will process this one.
+* The internal documentation (for developers) is located in the source file (.cpp)
 
-#### Examples <div id="CommentsExamples"></div>
+### Documenting a file <div id="DocumentingFile"></div>
+
+When creating a new source file, some information are necessary :
+
+* The filename
+* The creation date
+* The project where the file belongs to
+* The package (Core, Network, Rendering etc..)
+* The author to easily know who to contact for any questions or issues (multiple authors is possible)
 
 ```cpp
+/// \file       Main.cpp
+/// \date       19/03/2019
+/// \project    Cardinal
+/// \package    Core
+/// \author     Aredhele
+
+int main()
+{
+    return 0;
+}
+```
+
+### Documenting a method or a function <div id="DocumentingFunction"></div>
+
+To document a method or a function, you only need to provide some information about :
+
+* The use of the function or method *\brief*
+* The parameters *\param*
+* The return parameter (if applicable) *\return*
+
+```cpp
+/// \brief  Returns a vector filled with zeroes
+/// \return {0, 0, 0, 0}
+VectorRegister128Int VectorZero128Int();
+```
+
+### Documenting variables and members <div id="DocumentingMembers"></div>
+
+It's also possible to document variables and members variables if needed (public members) :
+
+```cpp
+static std::size_t s_allocated_size;   ///< The current amount of allocated memory (in bytes)
+```
+
+### Examples <div id="CommentsExamples"></div>
+
+```cpp
+/// \file       CEntityManager.hpp
+/// \date       19/03/2019
+/// \project    Cardinal
+/// \package    Core
+/// \author     Aredhele
+
 /// \class CEntityManager
 /// \brief Stores and manages all entities
 class CEntityManager
 {
 public:
 
-   /// \brief  Returns the current amount of entities
+   /// \brief  Returns the current amount of entities stored in the manager
    /// \return The current amount of entities
    unsigned GetEntityCount() const noexcept;
 
@@ -164,7 +223,7 @@ virtual void Foo(void);
 /* virtual */ void Bar::Foo(void) {}
 ```
     
-#### Const correctness <div id="ConstCorrectness"></div>
+## Const correctness <div id="ConstCorrectness"></div>
 
 <p align="justify">
 The <b>const-correctness</b> is necessary and strongly recommended because it makes the code more robust, clearer
@@ -193,7 +252,7 @@ to the one you choose :
     * const char* p_name = "foo"; // Pointer to a constant string
     * const char* const p_name = "foo"; // Constant pointer to a constant string
     
-#### C++11 and C++14 <div id="cpp11cpp14"></div>
+## C++11 and C++14 <div id="cpp11cpp14"></div>
 
 * Use c++ cast style instead of C cast
 * const_cast is not recommended
@@ -212,7 +271,7 @@ When marking a method as *override or final*, it suggests that it is a virtual m
 **The forbidden one :** 
 The use of *const_cast* is prohibited.
 
-#### Code formatting <div id="CodeFormatting"></div>
+## Code formatting <div id="CodeFormatting"></div>
 
 ```cpp 
 // Bad
@@ -259,7 +318,7 @@ Foo::Foo(int bar, int foo)
 }
 ```
 
-#### Namespaces <div id="Namespaces"></div>
+## Namespaces <div id="Namespaces"></div>
 Namespaces are useful to avoid name clashes with other source codes and libraries or even your own code.
 In Cardinal, the main namespace is **Cardinal** :
 ```cpp
@@ -276,13 +335,26 @@ namespace Cardinal
 Never use *using namespace* in a header, it's impossible to undo.
 
 
-#### Containers <div id="Containers"></div>
+## Types and containers <div id="TypesContainers"></div>
 
 ```
    Coming soon.
 ```
 
-#### Memory <div id="Memory"></div>
+
+## Types <div id="Types"></div>
+
+```
+   Coming soon.
+```
+
+## Containers <div id="Containers"></div>
+
+```
+   Coming soon.
+```
+
+## Memory <div id="Memory"></div>
 The memory is one of the main resources of the engine. And it's also easy to make a bad use of it.
 Here're some advices :
 
@@ -292,8 +364,52 @@ Here're some advices :
 * Never break the memory alignment 
 * Use engine allocators
 
-#### Optimization <div id="Optimization"></div>
+## Optimization <div id="Optimization"></div>
 
 ```
    Coming soon.
 ```
+
+### Compilation time <div id="CompilationTime"></div>
+
+In order to reduce the compilation time, there are several rules.
+
+**Preprocessor**
+
+<p align="justify">
+First, we can reduce the preprocessing time by organizing our headers. If the file to include is located in another folder, don't use relative path, it's messy and not clear. By using <b>#include <></b>, the preprocessor will look in all user defined path first and then in the current folder.
+</p>
+   
+```cpp
+// Don't
+#include "../CEngine.hpp"
+
+// Do
+#include <Engine/CEngine.hpp>
+```
+
+So if the file to include is in the current folder, you should use **#include ""** because the preprocessor will immediately find your file. 
+
+```cpp
+// Don't
+#include <CMemoryTracker.hpp>
+
+// Do
+#include "CMemoryTracker.hpp"
+```
+
+By sorting the includes in a alphabetical order, you can also help the preprocessor.
+
+```cpp
+// Don't
+#include <Engine/CEngine.hpp>
+#include <Engine/CAllocator.hpp>
+
+// Do
+#include <Engine/CAllocator.hpp>
+#include <Engine/CEngine.hpp>
+```
+
+Final tips :
+* Prefer using forward declarations in headers instead of regular includes to avoid massive inclusion checks.
+* Don't include something you don't need and clean your headers.
