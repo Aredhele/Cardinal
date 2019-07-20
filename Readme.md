@@ -17,7 +17,8 @@
 
 <p align="justify">
 Cardinal is a modern and modular game engine designed to solve some AAA game production issues. 
-The engine is fully written in C++17 and should be available on Windows, Linux and MacOS. To get started with the project, follow [this link](https://github.com/Aredhele/Cardinal/blob/master/Docs/Contributing/GettingStarted.md)
+The engine is fully written in C++17 and should be available on Windows, Linux and MacOS. To get started with the project, follow 
+<a href="https://github.com/Aredhele/Cardinal/blob/master/Docs/Contributing/GettingStarted.md">this link</a>. 
 </p>
 
 ## The concept
