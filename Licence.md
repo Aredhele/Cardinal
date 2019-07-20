@@ -1,3 +1,5 @@
+# ![Cardinal](https://raw.githubusercontent.com/Aredhele/Cardinal/master/Docs/Visual/Banner.png)
+
 #### Cardinal - All right reserved ©
     
 <p align="justify">
