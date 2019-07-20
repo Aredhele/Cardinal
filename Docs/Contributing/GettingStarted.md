@@ -61,4 +61,34 @@ Because we're gonna make an heavy use of the project folder, don't hesitate to c
 
 ## Setting up CLion with the project
 
-Coming soon.
+### Toolchain configuration
+
+Launch CLion, a popup will then ask you to open or create a project :
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/14150442/61575243-a979f000-aac9-11e9-9438-2d541ba420b8.PNG" width="50%" height="50%" />
+</p>
+
+Choose "Open" and locate your project folder :
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/14150442/61575244-a979f000-aac9-11e9-83ce-80167f6b0164.PNG" width="30%" height="30%" />
+</p>
+
+<p align="justify">
+Click "Ok", the editor will show up. Now we have to configure our compilers. Press CTRL+ALT+S or go to File > Settings. Then go to Build Execution, Deployement > Toolchains :
+</p>
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/14150442/61575333-a8958e00-aaca-11e9-8c79-5af424afe18b.PNG" width="90%" height="90%" />
+</p>
+
+<p align="justify">
+Click on the "+" button to add a new target compiler. We are going to add two different one (32 & 64 bits). Once you have clicked on "+" rename it into <i>GCC 8.1 POSIX SEH 64 bits</i>. Under the <i>Environment</i> tab, locate your compiler (should be something as D:/Librabies/MinGW64_GCC_8.1.0_POSIX_SEH if you have followed the tutorial). CLion will now detect this compiler. Do the same thing for the 32 bits compiler. You'll ended up with such result : 
+</p>
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/14150442/61575422-d8916100-aacb-11e9-94ad-27099b0de594.PNG" width="90%" height="90%" />
+</p>
+
+### CMake configuration
