@@ -55,6 +55,10 @@ In both case ensure that your project files are located on your disk at valid pa
 <p align="justify">
 Because we're gonna make an heavy use of the project folder, don't hesitate to create shortcuts on the project folder like :
 </p>
-# ![Cardinal](https://raw.githubusercontent.com/Aredhele/Cardinal/master/Docs/Visual/Banner.png)
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/14150442/61574507-1d63ca80-aac1-11e9-9b4f-8cb3751dd337.gif" width="373" height="188" />
+</p>
+
+## Setting up CLion with the project
 
 Coming soon.
