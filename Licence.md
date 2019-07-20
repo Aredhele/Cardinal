@@ -1,13 +1,10 @@
-MIT License
-
-Copyright (c) 2019 Aredhele
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+#### Cardinal - All right reserved ©
+    
+<p align="justify">
+This software is the property of the project authors (see <a href="Authors.md">
+Authors.md</a>).It is not possible to copy, modify, merge, publish, distribute 
+sublicense, and/or sell copies of the Software, and to permit persons to whom 
+the Software is furnished to do so without an handwritten agreement. 
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
@@ -19,3 +16,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+</p>
