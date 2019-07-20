@@ -76,7 +76,7 @@ Choose "Open" and locate your project folder :
 </p>
 
 <p align="justify">
-Click "Ok", the editor will show up. Now we have to configure our compilers. Press CTRL+ALT+S or go to File > Settings. Then go to Build Execution, Deployement > Toolchains :
+Click "Ok", the editor will show up. Now we have to configure our compilers. Press CTRL+ALT+S or go to File > Settings. Then go to <b>Build Execution, Deployement > Toolchains</b> :
 </p>
 
 <p align="center">
@@ -84,7 +84,7 @@ Click "Ok", the editor will show up. Now we have to configure our compilers. Pre
 </p>
 
 <p align="justify">
-Click on the "+" button to add a new target compiler. We are going to add two different one (32 & 64 bits). Once you have clicked on "+" rename it into <i>GCC 8.1 POSIX SEH 64 bits</i>. Under the <i>Environment</i> tab, locate your compiler (should be something as D:/Librabies/MinGW64_GCC_8.1.0_POSIX_SEH if you have followed the tutorial). CLion will now detect this compiler. Do the same thing for the 32 bits compiler. You'll ended up with such result : 
+Press "+" to add a new target compiler. We are going to add two different one (32 & 64 bits). Once you have clicked on "+" rename it into <i>GCC 8.1 POSIX SEH 64 bits</i>. Under the <i>Environment</i> tab, locate your compiler (should be something as D:/Librabies/MinGW64_GCC_8.1.0_POSIX_SEH if you have followed the tutorial). CLion will now detect this compiler. Do the same thing for the 32 bits compiler. You'll ended up with such result : 
 </p>
 
 <p align="center">
@@ -92,3 +92,38 @@ Click on the "+" button to add a new target compiler. We are going to add two di
 </p>
 
 ### CMake configuration
+
+<p align="justify">
+Our compilers are good but CMake is still unconfigured. Go into <b>Settings > Build Execution, Deployement > CMake</b>. We will create 4 different CMake configuration (Be careful, choose the right compiler at each time) :
+</p>
+
+* Debug 32 bits&nbsp;, Name : x86_d
+* Release 32 bits,     Name : x86_r
+* Debug 64 bits,&nbsp; Name : x64_d
+* Release 64 bits,     Name : x64_r
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/14150442/61575673-d1b81d80-aace-11e9-8610-c0fdf6799569.PNG" width="90%" height="90%" />
+</p>
+
+Well done, CLion is almost ready. CMake will now load the project.
+
+### Other usefull settings
+
+#### Hide CMake folders in the project hierarchy
+
+Unfortunately, CMake will generate a folder for each CMake configuration but we won't see them
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/14150442/61575801-ab937d00-aad0-11e9-83dd-67c0213ba611.PNG" width="40%" height="40%" />
+</p>
+
+To hide them in the hierarchy : Coming Soon
+
+#### CLion Live templates
+
+Coming Soon.
+
+#### Usefull plugins
+
+Coming Soon.
